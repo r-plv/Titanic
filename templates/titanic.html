@@ -1,0 +1,72 @@
+
+<form method="post" action='/predict'>
+    <h2><center>Required data for Titanic Survival Prediction</center></h2>
+	<fieldset>
+
+		<label for="PassengerId">PassengerId </label><br>
+		<input type=number name="PassengerId" placeholder="Enter Passenger Id"><br>
+
+		<label for="Pclass">Pclass </label><br>
+		<input list="Pclass" name="Pclass" placeholder="Enter Passenger Class">
+		<datalist id="Pclass">
+			<option value="1">
+			<option value="2">
+			<option value="3">
+		</datalist><br>
+
+		<label for="Name">Name <label><br>
+		<input type="text" name="Name" placeholder="Enter Passanger Name"><br>
+
+		<label for="Sex">Sex </label><br>
+		<input type="radio" name="Sex" value=1>Male
+		<input type="radio" name="Sex" value=0>Female<br>
+
+		<label for="Age">Age </label><br>
+		<input type="number" name="Age" step=any placeholder="Enter Age"><br>
+
+		<label for="SibSp">Siblings Spouse</label><br>
+		<input list="SibSp" name="SibSp" placeholder="Select no of Siblings Spouse">
+		<datalist id="SibSp">
+			<option value="0">
+			<option value="1">
+			<option value="2">
+			<option value="3">
+			<option value="4">
+			<option value="5">
+			<option value="6">
+			<option value="7">
+			<option value="8">
+		</datalist><br>
+
+		<label for="Parch">Parents Children</label><br>
+		<input list="Parch" name="Parch" placeholder="Select no of Parents Children">
+		<datalist id="Parch">
+			<option value="0">
+			<option value="1">
+			<option value="2">
+			<option value="3">
+			<option value="4">
+			<option value="5">
+			<option value="6">
+		</datalist><br>
+
+		<label for="Ticket">Ticket</label><br>
+		<input type="text" name="Ticket" placeholder="Enter Ticket Id"><br>
+
+		<label for="Fare">Fare</label><br>
+		<input type="number" name="Fare" placeholder="Enter Fare Amount" step=any><br>
+
+		<label for="Cabin">Do you have Cabin?</label><br>
+		<input type="radio" name="Cabin" value=0>Yes
+		<input type="radio" name="Cabin" value=1>No<br>
+
+		<label for="Embarked">Embarked</label><br>
+        <input type="radio" name="Embarked" value=0>S
+		<input type="radio" name="Embarked" value=1>C
+		<input type="radio" name="Embarked" value=2>Q<br>
+			
+			<p><label><strong>Predict Passenger Survived or Not</strong></label></p>
+		<button><b>Predict</b></button>
+			
+	</fieldset>
+</form>
